@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background: url(images/bg-pattern-bottom.svg) bottom, url(images/bg-pattern-top.svg) top;
+      background-color: hsl(185, 75%, 39%);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  /* card */
+  .card {
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+
+    margin: 300px auto;
+    padding: 0 0 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 500px;
+    height: 500px;
+  }
+
+  .img-circle {
+  border-radius: 50%;
+  border: 4px solid #FFFFFF;
+  }
+
+  .profile{
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -70px auto 0;
+    overflow: hidden;
+    width: 120px;
+  }
+
+  .cover{
+    border-radius: 20px 20px 0 0;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .cover img{
+    width: 100%;
+  }
+
+  .profile img{
+    background: none repeat scroll 0 0 #FFFFFF;
+    
+    width: 100%;
+  }
+
+  .extra
+  {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+  .extra ul{
+    list-style-type: none;
+  }
+
+  .extra ul li{
+    display: inline-block;
+    padding-left: 100px;
+  }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="cover">
+      <img src="images/bg-pattern-card.svg" alt="">
+    </div>
+    
+    <div class="profile">
+      <img class="img-circle" src="images/image-victor.jpg" alt="">
+    </div>
+    <h3>Victor Crest</h3> <h3>26</h3>
+    <p>London</p>
+  
+    <div class="extra">
+      <ul>
+        <li>
+          <h3>80K</h3>
+          <p>Followers</p>
+        </li>
+
+        <li>
+          <h3>803K</h3>
+          <p>Likes</p>
+        </li>
+
+        <li>              
+        <h3>1.4K</h3>
+        <p>Photos</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
